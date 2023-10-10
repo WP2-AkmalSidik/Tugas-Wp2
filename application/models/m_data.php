@@ -6,7 +6,7 @@ class M_data extends CI_Model{
     function tampil_data(){
         return $this->db->get('mahasiswa');
     }
-    function get_data_by_id($id) {
+    function by_id($id) {
         return $this->db->get_where('mahasiswa', array(
             'id' => $id)
             )->row();

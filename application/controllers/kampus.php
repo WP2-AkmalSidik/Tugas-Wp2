@@ -31,7 +31,7 @@ class Kampus extends CI_Controller {
     }
 
     function edit($id) {
-        $data['mahasiswa'] = $this->m_data->get_data_by_id($id);
+        $data['mahasiswa'] = $this->m_data->by_id($id);
         $this->load->view('edit_data', $data);
     }
 
