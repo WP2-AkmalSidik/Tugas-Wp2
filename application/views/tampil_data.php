@@ -14,6 +14,7 @@
       <td>Nama</td>
       <td>Alamat</td>
       <td>Pekerjaan</td>
+      <td>Foto</td>
       <td>Action</td>
     </tr>
 
@@ -27,6 +28,7 @@
       <td><?= $u->nama ?></td>
       <td><?= $u->alamat ?></td>
       <td><?= $u->pekerjaan ?></td>
+      <td> <img src="<?= base_url();?><?= $u->foto ?>" width="50" height="50" alt=""> </td>
       <td>
             <?= anchor('kampus/edit/'.$u->id,'Edit | '); ?>
             <a class="fas fa-delete" href="<?= base_url('kampus/hapus/'.$u->id); ?>" onclick="return confirm('Apakah Anda yakin ingin menghapus data?')">Hapus</a>
